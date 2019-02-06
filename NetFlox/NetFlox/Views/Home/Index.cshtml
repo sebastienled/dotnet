@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+
+    <h2>Rechercher des Films</h2>
+    
+    <form method="GET" asp-action="Search" asp-controller="Films">
+
+        <input id="search" name="query" type="Text" />
+        <input value="Rechercher" type="Submit" />
+
+    </form>
+
+    <h2>Rechercher des célébrités</h2>
+
+    <form method="GET" asp-action="Search" asp-controller="Celebrites">
+
+        <input id="search" name="query" type="Text" />
+        <input value="Rechercher" type="Submit" />
+
+    </form>
+
+
+</div>
